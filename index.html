@@ -23,10 +23,10 @@
   <script src="https://www.youtube.com/iframe_api"></script>
 </head>
 <body class="bg-[#0e0908] text-white selection:bg-amber-500/30 selection:text-amber-100">
-  <div id="root"></div>
+  <div id="root" style="position:relative;z-index:10;"></div>
 
-  <!-- PERSISTENT YOUTUBE BRIDGE (outside React root so React virtual DOM never tears it down) -->
-  <div style="position:fixed;bottom:0;right:0;width:200px;height:200px;opacity:0.001;pointer-events:none;z-index:-10;overflow:hidden;">
+  <!-- PERSISTENT YOUTUBE BRIDGE (visible to browser layout engine to satisfy autoplay policy, layered behind #root) -->
+  <div id="youtubeBridgeContainer" style="position:fixed;bottom:0;right:0;width:200px;height:200px;pointer-events:none;z-index:0;overflow:hidden;">
     <div id="youtubeBridge"></div>
   </div>
 

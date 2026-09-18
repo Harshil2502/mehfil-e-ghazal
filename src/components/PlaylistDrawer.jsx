@@ -1,12 +1,14 @@
 import React, { useState } from 'react';
-import { Search, X, Play, Music } from 'lucide-react';
+import { Search, X, Play, Pause, Music } from 'lucide-react';
 
 export default function PlaylistDrawer({
   isOpen,
   onClose,
   playlist,
   currentIndex,
-  onSelectTrack
+  isPlaying,
+  onSelectTrack,
+  onTogglePlay
 }) {
   const [searchTerm, setSearchTerm] = useState('');
   const [activeCategory, setActiveCategory] = useState('all');
@@ -19,7 +21,8 @@ export default function PlaylistDrawer({
     { id: 'mehdi', label: 'Mehdi Hassan' },
     { id: 'ghulam', label: 'Ghulam Ali' },
     { id: 'farida', label: 'Farida & Begum' },
-    { id: 'sufi', label: 'Sufiana' }
+    { id: 'sufi', label: 'Sufiana' },
+    { id: 'pankaj', label: 'Pankaj Udhas' }
   ];
 
   const filtered = playlist.filter((track) => {
@@ -113,7 +116,11 @@ export default function PlaylistDrawer({
                 <div
                   key={track.id}
                   onClick={() => {
-                    onSelectTrack(originalIndex);
+                    if (isCurrent && onTogglePlay) {
+                      onTogglePlay();
+                    } else {
+                      onSelectTrack(originalIndex);
+                    }
                     onClose();
                   }}
                   className={`p-2.5 rounded-xl border flex items-center justify-between gap-3 cursor-pointer transition-all hover:border-amber-400/60 ${
@@ -142,8 +149,12 @@ export default function PlaylistDrawer({
 
                   <div className="flex items-center gap-2 shrink-0 font-mono text-[11px] text-white/50">
                     <span>{track.duration}</span>
-                    <span className={`w-6 h-6 rounded-full flex items-center justify-center text-xs ${isCurrent ? 'bg-amber-500 text-black' : 'bg-amber-500/20 text-amber-300'}`}>
-                      <Play className="w-3 h-3 fill-current ml-0.5" />
+                    <span className={`w-6 h-6 rounded-full flex items-center justify-center text-xs transition-transform ${isCurrent ? 'bg-amber-500 text-black scale-105' : 'bg-amber-500/20 text-amber-300'}`}>
+                      {isCurrent && isPlaying ? (
+                        <Pause className="w-3 h-3 fill-current" />
+                      ) : (
+                        <Play className="w-3 h-3 fill-current ml-0.5" />
+                      )}
                     </span>
                   </div>
                 </div>

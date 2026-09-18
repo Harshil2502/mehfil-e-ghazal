@@ -83,6 +83,18 @@ export default function App() {
     }, 2800);
   };
 
+  const parseDurationToSeconds = (durStr) => {
+    if (!durStr || typeof durStr !== 'string') return 240;
+    const parts = durStr.split(':').map(Number);
+    if (parts.length === 2 && !isNaN(parts[0]) && !isNaN(parts[1])) {
+      return parts[0] * 60 + parts[1];
+    }
+    if (parts.length === 3 && !isNaN(parts[0]) && !isNaN(parts[1]) && !isNaN(parts[2])) {
+      return parts[0] * 3600 + parts[1] * 60 + parts[2];
+    }
+    return 240;
+  };
+
   const currentTrack = GHAZAL_PLAYLIST[currentTrackIndex];
 
   // Playback Control Handlers
@@ -104,10 +116,14 @@ export default function App() {
 
     trackIndexRef.current = index;
     setCurrentTrackIndex(index);
-    setCurrentTime(0);
-    setIsPlaying(true);
 
     const track = GHAZAL_PLAYLIST[index];
+    const initialDur = parseDurationToSeconds(track.duration);
+    setCurrentTime(0);
+    setDuration(initialDur);
+    ytManager.setSimulatedTime(0, initialDur);
+    setIsPlaying(true);
+
     ytManager.loadVideo(track.youtubeId);
     showToast(`Now Playing: ${track.title}`, '🎵');
   };
@@ -126,6 +142,11 @@ export default function App() {
   };
 
   const handlePrev = () => {
+    if (currentTime > 3) {
+      handleSeek(0);
+      showToast('Replaying track', '⏮️');
+      return;
+    }
     const prevIndex = (trackIndexRef.current - 1 + GHAZAL_PLAYLIST.length) % GHAZAL_PLAYLIST.length;
     handlePlayTrack(prevIndex);
   };
@@ -144,14 +165,22 @@ export default function App() {
     ytManager.setVolume(newVol);
   };
 
+  const errorCountRef = useRef(0);
+
   // Initialize YouTube API & player bridge
   useEffect(() => {
+    const firstTrack = GHAZAL_PLAYLIST[0];
+    if (firstTrack) {
+      setDuration(parseDurationToSeconds(firstTrack.duration));
+    }
+
     ytManager.init('youtubeBridge', GHAZAL_PLAYLIST[0].youtubeId, {
       onReady: () => {
         // Player ready
       },
       onStateChange: (event) => {
         if (window.YT && event.data === window.YT.PlayerState.PLAYING) {
+          errorCountRef.current = 0;
           setIsPlaying(true);
         } else if (window.YT && event.data === window.YT.PlayerState.PAUSED) {
           setIsPlaying(false);
@@ -160,8 +189,18 @@ export default function App() {
         }
       },
       onError: (e) => {
-        console.warn('YouTube playback error, advancing to next song:', e);
-        if (handleNextRef.current) handleNextRef.current();
+        console.warn('YouTube playback error:', e);
+        errorCountRef.current += 1;
+        if (errorCountRef.current <= 2) {
+          showToast('Skipping unavailable track...', '⚠️');
+          setTimeout(() => {
+            if (handleNextRef.current) handleNextRef.current();
+          }, 1200);
+        } else {
+          setIsPlaying(false);
+          showToast('Audio paused. Please choose another track.', '⚠️');
+          errorCountRef.current = 0;
+        }
       }
     });
   }, []);
@@ -172,27 +211,32 @@ export default function App() {
     if (isPlaying) {
       interval = setInterval(() => {
         const cur = ytManager.getCurrentTime();
-        const dur = ytManager.getDuration() || 245;
-        if (cur > 0) {
+        const dur = ytManager.getDuration() || parseDurationToSeconds(currentTrack?.duration);
+
+        if (typeof cur === 'number' && !isNaN(cur) && cur > 0) {
           setCurrentTime(cur);
         } else {
+          // Smoothly advance time bar so it never freezes
           setCurrentTime((prev) => {
-            const next = prev + 0.4;
+            const next = prev + 0.35;
             ytManager.setSimulatedTime(next, dur);
-            if (next >= dur) {
+            if (dur > 0 && next >= dur) {
               if (handleNextRef.current) handleNextRef.current();
               return 0;
             }
             return next;
           });
         }
-        if (dur > 0) setDuration(dur);
-      }, 400);
+
+        if (typeof dur === 'number' && !isNaN(dur) && dur > 0) {
+          setDuration(dur);
+        }
+      }, 350);
     }
     return () => {
       if (interval) clearInterval(interval);
     };
-  }, [isPlaying, currentTrackIndex]);
+  }, [isPlaying, currentTrackIndex, currentTrack]);
 
   // MediaSession API Integration for Lock Screen Controls
   useEffect(() => {
@@ -214,6 +258,27 @@ export default function App() {
       } catch (e) {}
     }
   }, [currentTrack]);
+
+  // Keyboard Shortcuts (Space: Play/Pause, Arrows: Next/Prev)
+  useEffect(() => {
+    const handleKeyDown = (e) => {
+      if (['INPUT', 'TEXTAREA', 'SELECT'].includes(e.target?.tagName)) return;
+
+      if (e.code === 'Space') {
+        e.preventDefault();
+        handleTogglePlay();
+      } else if (e.code === 'ArrowRight' && !e.shiftKey) {
+        e.preventDefault();
+        handleNextRef.current?.();
+      } else if (e.code === 'ArrowLeft' && !e.shiftKey) {
+        e.preventDefault();
+        handlePrevRef.current?.();
+      }
+    };
+
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
+  }, [isPlaying]);
 
   // Baarish Quick Toggle
   const handleToggleRain = () => {
@@ -370,7 +435,9 @@ export default function App() {
         onClose={() => setIsPlaylistOpen(false)}
         playlist={GHAZAL_PLAYLIST}
         currentIndex={currentTrackIndex}
+        isPlaying={isPlaying}
         onSelectTrack={handlePlayTrack}
+        onTogglePlay={handleTogglePlay}
       />
 
       <LyricsModal

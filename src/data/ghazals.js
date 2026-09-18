@@ -1,331 +1,482 @@
 export const GHAZAL_PLAYLIST = [
   {
-    id: 1,
-    title: "Woh Kagaz Ki Kashti",
-    titleUrdu: "وہ کاغذ کی کشتی",
-    artist: "Jagjit Singh & Chitra Singh",
-    poet: "Sudarshan Faakir",
-    raag: "Shivaranjani",
-    mood: "Nostalgia • Childhood",
-    category: "jagjit",
-    youtubeId: "zC0O6gTcGDg",
-    duration: "4:05",
-    cover: "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=150&q=80",
-    lyrics: `Yeh daulat bhi le lo, yeh shohrat bhi le lo
-Bhale chheen lo mujhse meri jawaani
-Magar mujhko lauta do bachpan ka saawan
-Woh kaagaz ki kashti, woh baarish ka paani
-
-Muhalle ki sabse puraani nishaani
-Woh budhiya jise bachhe kehte the naani
-Woh naani ki baaton mein pariyon ka dera
-Woh chehre ki jhurriyon mein sadiyon ka phera`,
-    meaning: "A timeless masterpiece yearning for the innocence of childhood. Take away all wealth, prestige, and youth, but return that one monsoon afternoon of paper boats sailing through rainwater."
+    "id": 1,
+    "title": "Woh Kagaz Ki Kashti",
+    "titleUrdu": "وہ کاغذ کی کشتی",
+    "artist": "Jagjit Singh & Chitra Singh",
+    "poet": "Sudarshan Faakir",
+    "raag": "Shivaranjani",
+    "mood": "Nostalgia • Childhood",
+    "category": "jagjit",
+    "youtubeId": "zC0O6gTcGDg",
+    "duration": "4:05",
+    "cover": "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=150&q=80",
+    "lyrics": "Yeh daulat bhi le lo, yeh shohrat bhi le lo\nBhale chheen lo mujhse meri jawaani\nMagar mujhko lauta do bachpan ka saawan\nWoh kaagaz ki kashti, woh baarish ka paani\n\nMuhalle ki sabse puraani nishaani\nWoh budhiya jise bachhe kehte the naani\nWoh naani ki baaton mein pariyon ka dera\nWoh chehre ki jhurriyon mein sadiyon ka phera",
+    "meaning": "A timeless masterpiece yearning for the innocence of childhood. Take away all wealth, prestige, and youth, but return that one monsoon afternoon of paper boats sailing through rainwater."
   },
   {
-    id: 2,
-    title: "Hothon Se Chhoo Lo Tum",
-    titleUrdu: "ہونٹوں سے چھو لو تم",
-    artist: "Jagjit Singh",
-    poet: "Indeevar",
-    raag: "Yaman Kalyan",
-    mood: "Ishq • Immortality",
-    category: "jagjit",
-    youtubeId: "p8btPl_AG4A",
-    duration: "4:58",
-    cover: "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=150&q=80",
-    lyrics: `Hothon se chhoo lo tum, mera geet amar kar do
-Ban jaao meet mere, meri preet amar kar do
-
-Na umr ki seema ho, na janm ka ho bandhan
-Jab pyaar kare koi, toh dekhe kewal mann
-Nayi reet chala kar tum, yeh reet amar kar do
-
-Aakaash ka soonapan, mere tanha mann mein
-Paayal chhan-kaati tum, aa jaao jeevan mein`,
-    meaning: "Touch my silent melody with your lips and make it immortal. Pure devotion that transcends the limits of age, lifetimes, and societal constraints."
+    "id": 2,
+    "title": "Hothon Se Chhoo Lo Tum",
+    "titleUrdu": "ہونٹوں سے چھو لو تم",
+    "artist": "Jagjit Singh",
+    "poet": "Indeevar",
+    "raag": "Yaman Kalyan",
+    "mood": "Ishq • Immortality",
+    "category": "jagjit",
+    "youtubeId": "Ee5sDeaNCnw",
+    "duration": "5:00",
+    "cover": "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=150&q=80",
+    "lyrics": "Hothon se chhoo lo tum, mera geet amar kar do\nBan jaao meet mere, meri preet amar kar do\n\nNa umr ki seema ho, na janm ka ho bandhan\nJab pyaar kare koi, toh dekhe kewal mann\nNayi reet chala kar tum, yeh reet amar kar do\n\nAakaash ka soonapan, mere tanha mann mein\nPaayal chhan-kaati tum, aa jaao jeevan mein",
+    "meaning": "Touch my silent melody with your lips and make it immortal. Pure devotion that transcends the limits of age, lifetimes, and societal constraints."
   },
   {
-    id: 3,
-    title: "Jhuki Jhuki Si Nazar",
-    titleUrdu: "جھکی جھکی سی نظر",
-    artist: "Jagjit Singh",
-    poet: "Kaifi Azmi",
-    raag: "Bhairavi",
-    mood: "Khamoshi • Raaz",
-    category: "jagjit",
-    youtubeId: "YAgysc8StGE",
-    duration: "5:02",
-    cover: "https://images.unsplash.com/photo-1470225620780-dba8ba36b745?auto=format&fit=crop&w=150&q=80",
-    lyrics: `Jhuki jhuki si nazar beqaraar hai ki nahin
-Daba daba sa sahi dil mein pyaar hai ki nahin
-
-Tu apne dil ki javaan dhadkanon ko gin ke bata
-Meri tarah tera dil beqaraar hai ki nahin
-
-Woh pal ke jis mein mohabbat javaan hoti hai
-Uss ek pal ka tujhe intezaar hai ki nahin`,
-    meaning: "Asking whether those bashfully lowered eyes mask a restless, pounding heart, and whether you secretly await that singular moment where love blossoms."
+    "id": 3,
+    "title": "Jhuki Jhuki Si Nazar",
+    "titleUrdu": "جھکی جھکی سی نظر",
+    "artist": "Jagjit Singh",
+    "poet": "Kaifi Azmi",
+    "raag": "Bhairavi",
+    "mood": "Khamoshi • Raaz",
+    "category": "jagjit",
+    "youtubeId": "xY2P6IAd0MI",
+    "duration": "3:50",
+    "cover": "https://images.unsplash.com/photo-1470225620780-dba8ba36b745?auto=format&fit=crop&w=150&q=80",
+    "lyrics": "Jhuki jhuki si nazar beqaraar hai ki nahin\nDaba daba sa sahi dil mein pyaar hai ki nahin\n\nTu apne dil ki javaan dhadkanon ko gin ke bata\nMeri tarah tera dil beqaraar hai ki nahin\n\nWoh pal ke jis mein mohabbat javaan hoti hai\nUss ek pal ka tujhe intezaar hai ki nahin",
+    "meaning": "Asking whether those bashfully lowered eyes mask a restless, pounding heart, and whether you secretly await that singular moment where love blossoms."
   },
   {
-    id: 4,
-    title: "Tum Ko Dekha To Yeh Khayal Aaya",
-    titleUrdu: "تم کو دیکھا تو یہ خیال آیا",
-    artist: "Jagjit Singh & Chitra Singh",
-    poet: "Javed Akhtar",
-    raag: "Kafi",
-    mood: "Sukoon • Zindagi",
-    category: "jagjit",
-    youtubeId: "33G1l82J22o",
-    duration: "4:50",
-    cover: "https://images.unsplash.com/photo-1507838153414-b4b713384a76?auto=format&fit=crop&w=150&q=80",
-    lyrics: `Tum ko dekha toh yeh khayaal aaya
-Zindagi dhoop tum ghana saaya
-
-Aaj phir dil ne ik tamanna ki
-Aaj phir dil ko humne samjhaaya
-
-Hum jise gunguna nahin sakte
-Waqt ne aisa geet kyoon gaaya`,
-    meaning: "Comparing existence to a harsh, blinding desert sun, and the beloved to the deep, peaceful shade of a sanctuary tree."
+    "id": 4,
+    "title": "Tum Ko Dekha To Yeh Khayal Aaya",
+    "titleUrdu": "تم کو دیکھا تو یہ خیال آیا",
+    "artist": "Jagjit Singh & Chitra Singh",
+    "poet": "Javed Akhtar",
+    "raag": "Kafi",
+    "mood": "Sukoon • Zindagi",
+    "category": "jagjit",
+    "youtubeId": "WtPbNKk9XpU",
+    "duration": "4:58",
+    "cover": "https://images.unsplash.com/photo-1507838153414-b4b713384a76?auto=format&fit=crop&w=150&q=80",
+    "lyrics": "Tum ko dekha toh yeh khayaal aaya\nZindagi dhoop tum ghana saaya\n\nAaj phir dil ne ik tamanna ki\nAaj phir dil ko humne samjhaaya\n\nHum jise gunguna nahin sakte\nWaqt ne aisa geet kyoon gaaya",
+    "meaning": "Comparing existence to a harsh, blinding desert sun, and the beloved to the deep, peaceful shade of a sanctuary tree."
   },
   {
-    id: 5,
-    title: "Chitthi Na Koi Sandesh",
-    titleUrdu: "چٹھی نہ کوئی سندیش",
-    artist: "Jagjit Singh",
-    poet: "Anand Bakshi",
-    raag: "Kirwani",
-    mood: "Dard • Judaai",
-    category: "jagjit",
-    youtubeId: "F32Q91_Zl2Y",
-    duration: "6:20",
-    cover: "https://images.unsplash.com/photo-1516280440614-37939bbacd81?auto=format&fit=crop&w=150&q=80",
-    lyrics: `Chitthi na koi sandesh, jaane woh kaun sa desh
-Jahaan tum chale gaye...
-
-Ik aah bhari hogi, humne na suni hogi
-Jaate jaate tumne aawaaz toh di hogi
-Har waqt yahi hai gham, uss waqt kahaan the hum
-Kahaan tum chale gaye...`,
-    meaning: "A grief-stricken elegy asking what distant realm an untraceable departed soul has traveled to, where no letter or message can ever bridge the silence."
+    "id": 5,
+    "title": "Chitthi Na Koi Sandesh",
+    "titleUrdu": "چٹھی نہ کوئی سندیش",
+    "artist": "Jagjit Singh",
+    "poet": "Anand Bakshi",
+    "raag": "Kirwani",
+    "mood": "Dard • Judaai",
+    "category": "jagjit",
+    "youtubeId": "sBBzwoSngGg",
+    "duration": "6:54",
+    "cover": "https://images.unsplash.com/photo-1516280440614-37939bbacd81?auto=format&fit=crop&w=150&q=80",
+    "lyrics": "Chitthi na koi sandesh, jaane woh kaun sa desh\nJahaan tum chale gaye...\n\nIk aah bhari hogi, humne na suni hogi\nJaate jaate tumne aawaaz toh di hogi\nHar waqt yahi hai gham, uss waqt kahaan the hum\nKahaan tum chale gaye...",
+    "meaning": "A grief-stricken elegy asking what distant realm an untraceable departed soul has traveled to, where no letter or message can ever bridge the silence."
   },
   {
-    id: 6,
-    title: "Ranjish Hi Sahi",
-    titleUrdu: "رنجش ہی سہی",
-    artist: "Mehdi Hassan",
-    poet: "Ahmad Faraz",
-    raag: "Yaman",
-    mood: "Hijr • Gila",
-    category: "mehdi",
-    youtubeId: "pba_YmWDAIU",
-    duration: "6:14",
-    cover: "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&w=150&q=80",
-    lyrics: `Ranjish hi sahi, dil hi dukhaane ke liye aa
-Aa phir se mujhe chhod ke jaane ke liye aa
-
-Pehle se marasim na sahi, phir bhi kabhi toh
-Rasm-o-rahe duniya hi nibhaane ke liye aa
-
-Kis kis ko bataayenge judaai ka sabab hum
-Tu mujh se khafa hai toh zamaane ke liye aa`,
-    meaning: "Faraz's greatest ghazal: Even if with resentment, even if only to break my heart again, return... if only to leave me once more."
+    "id": 6,
+    "title": "Tum Itna Jo Muskura Rahe Ho",
+    "titleUrdu": "تم اتنا جو مسکرا رہے ہو",
+    "artist": "Jagjit Singh",
+    "poet": "Kaifi Azmi",
+    "raag": "Khamaj",
+    "mood": "Chhupa Dard • Muskaan",
+    "category": "jagjit",
+    "youtubeId": "C8eAKT-zQXk",
+    "duration": "5:22",
+    "cover": "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=150&q=80",
+    "lyrics": "Tum itna jo muskura rahe ho\nKya gham hai jisko chhupa rahe ho\n\nAankhon mein nami, hansi labon par\nKya haal hai kya dikha rahe ho\n\nBan jaayenge zehar peete peete\nYeh ashq jo peete ja rahe ho\n\nJin zakhmon ko waqt bhar chala hai\nTum kyon unhe chhede ja rahe ho",
+    "meaning": "Why smile so radiantly when a quiet sorrow resides behind those eyes? Wondering what deep grief the heart is trying so desperately to veil from the world."
   },
   {
-    id: 7,
-    title: "Gulon Mein Rang Bhare",
-    titleUrdu: "گلوں میں رنگ بھرے",
-    artist: "Mehdi Hassan",
-    poet: "Faiz Ahmad Faiz",
-    raag: "Jhinjhoti",
-    mood: "Bahaar • Intezaar",
-    category: "mehdi",
-    youtubeId: "0bL71pXf-4c",
-    duration: "5:30",
-    cover: "https://images.unsplash.com/photo-1490750967868-88aa4486c946?auto=format&fit=crop&w=150&q=80",
-    lyrics: `Gulon mein rang bhare baad-e-naubahaar chale
-Chale bhi aao ki gulshan ka kaarobaar chale
-
-Qafas udaas hai yaaro saba se kuch toh kaho
-Kahin toh beher-e-khuda aaj zikr-e-yaar chale
-
-Khabar shab-e-wisaal ki uss but-e-jafakaar ko do
-Ki shamma bujhne ko aayi, seher ka taara chale`,
-    meaning: "Let the fresh spring breeze paint the roses red—do return, so the true business of the garden may finally begin."
+    "id": 7,
+    "title": "Koi Fariyaad",
+    "titleUrdu": "کوئی فریاد",
+    "artist": "Jagjit Singh",
+    "poet": "Faaiz Anwar",
+    "raag": "Bhairavi",
+    "mood": "Bechaini • Yaadein",
+    "category": "jagjit",
+    "youtubeId": "8MN2bxMiB9A",
+    "duration": "8:35",
+    "cover": "https://images.unsplash.com/photo-1499209974431-9dddcece7f88?auto=format&fit=crop&w=150&q=80",
+    "lyrics": "Koi fariyaad tere dil mein dabi ho jaise\nTune aankhon se koi baat kahi ho jaise\n\nJaagti aankhon se dekha hai tamasha apna\nKaanch ke khwaab the toote hain to dard hua hai\n\nEk lamhe mein simat aaya hai sadiyon ka safar\nZindagi tez bohat tez chali ho jaise",
+    "meaning": "As if a silent cry remains trapped in your heart; an entire lifetime condensed into a single quiet gaze of longing and unspoken hurt."
   },
   {
-    id: 8,
-    title: "Mohabbat Karne Wale",
-    titleUrdu: "محبت کرنے والے کم نہ ہوں گے",
-    artist: "Mehdi Hassan",
-    poet: "Hafeez Hoshiarpuri",
-    raag: "Pilu",
-    mood: "Wafa • Yaad",
-    category: "mehdi",
-    youtubeId: "fN3a1ZvZkLg",
-    duration: "5:45",
-    cover: "https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?auto=format&fit=crop&w=150&q=80",
-    lyrics: `Mohabbat karne wale kam na honge
-Teri mehfil mein lekin hum na honge
-
-Zamaane bhar ke gham ya ik tera gham
-Yeh gham hoga toh kitne gham na honge
-
-Dilon ki uljhanein badhti rahengi
-Agar kuch mashware baaham na honge`,
-    meaning: "There will never be a shortage of those who praise and love you; but in your gathering, I will no longer be there."
+    "id": 8,
+    "title": "Hazaron Khwaishein Aisi",
+    "titleUrdu": "ہزاروں خواہشیں ایسی",
+    "artist": "Jagjit Singh",
+    "poet": "Mirza Ghalib",
+    "raag": "Bhairavi",
+    "mood": "Falsafa • Ghalib",
+    "category": "jagjit",
+    "youtubeId": "Y3sjcbtr6U0",
+    "duration": "5:57",
+    "cover": "https://images.unsplash.com/photo-1457369804613-52c61a468e7d?auto=format&fit=crop&w=150&q=80",
+    "lyrics": "Hazaaron khwaahishein aisi ki har khwaahish pe dam nikle\nBohat nikle mere armaan lekin phir bhi kam nikle\n\nDare kyon mera qaatil kya rahega uss ki gardan par\nWoh khoon jo chashm-e-tar se umr bhar yoon dam-ba-dam nikle\n\nNikalna khuld se aadam ka sunte aaye the lekin\nBohat be-aabroo hokar tere kooche se hum nikle",
+    "meaning": "Ghalibs immortal reflection: Thousands of desires, each worth dying for; countless desires were fulfilled, yet so few compared to what remained in the heart."
   },
   {
-    id: 9,
-    title: "Chupke Chupke Raat Din",
-    titleUrdu: "چپکے چپکے رات دن",
-    artist: "Ghulam Ali",
-    poet: "Hasrat Mohani",
-    raag: "Kafi",
-    mood: "Shab-e-Firaaq • Yaadein",
-    category: "ghulam",
-    youtubeId: "kYJqD2sS4uI",
-    duration: "7:12",
-    cover: "https://images.unsplash.com/photo-1511192336575-5a79af67a629?auto=format&fit=crop&w=150&q=80",
-    lyrics: `Chupke chupke raat din aansoo bahaana yaad hai
-Hum ko ab tak aashiqui ka woh zamaana yaad hai
-
-Ba-hazaaran iztiraab-o-sad-hazaaran ishtiyaaq
-Tujhse woh pehle-pehal dil ka lagaana yaad hai
-
-Do-pahar ki dhoop mein mere bulaane ke liye
-Woh tera kothe pe nange paaon aana yaad hai`,
-    meaning: "Remembering those solitary nights shedding quiet tears, and recalling every tender heartbeat of our first forbidden love."
+    "id": 9,
+    "title": "Baat Niklegi To Phir Door Talak",
+    "titleUrdu": "بات نکلے گی تو پھر دور تلک",
+    "artist": "Jagjit Singh",
+    "poet": "Kafeel Aazer",
+    "raag": "Kirwani",
+    "mood": "Ruswaai • Afsaana",
+    "category": "jagjit",
+    "youtubeId": "1MKdWpE_724",
+    "duration": "4:01",
+    "cover": "https://images.unsplash.com/photo-1509198397868-475647b2a1e5?auto=format&fit=crop&w=150&q=80",
+    "lyrics": "Baat niklegi toh phir door talak jaayegi\nLog be-wajah udaasi ka sabab poochhenge\n\nYeh bhi poochhenge ki tum itni pareshaan kyon ho\nUngliyaan uthhengi sukhi hui zulfon ki taraf\nGham ka mafhoom samajh lene ki koshish hogi\nBaat niklegi toh phir door talak jaayegi",
+    "meaning": "If whisper of our secret ever escapes into the air, it will travel far and wide—strangers will inquire about the sadness lingering in your eyes."
   },
   {
-    id: 10,
-    title: "Hangama Hai Kyon Barpa",
-    titleUrdu: "ہنگامہ ہے کیوں برپا",
-    artist: "Ghulam Ali",
-    poet: "Akbar Allahabadi",
-    raag: "Darbari",
-    mood: "Maikhana • Mastana",
-    category: "ghulam",
-    youtubeId: "oE6m2Q-Z3mE",
-    duration: "6:40",
-    cover: "https://images.unsplash.com/photo-1470225620780-dba8ba36b745?auto=format&fit=crop&w=150&q=80",
-    lyrics: `Hangama hai kyoon barpa, thodi si jo pee li hai
-Daaka toh nahin daala, chori toh nahin ki hai
-
-Uss mai se nahin matlab, dil jis se ho begaana
-Maqsood hai uss mai se, dil hi mein jo kheenchti hai
-
-Sooraj mein lage dhabba, fitrat ke karishme hain
-But hum ko kahein kaafir, Allah ki marzi hai`,
-    meaning: "Why create such an uproar merely because I indulged in a drop of wine? I haven't plundered or robbed anyone!"
+    "id": 10,
+    "title": "Ranjish Hi Sahi",
+    "titleUrdu": "رنجش ہی سہی",
+    "artist": "Mehdi Hassan",
+    "poet": "Ahmad Faraz",
+    "raag": "Yaman",
+    "mood": "Hijr • Gila",
+    "category": "mehdi",
+    "youtubeId": "Xc6uwbXpmUY",
+    "duration": "6:14",
+    "cover": "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&w=150&q=80",
+    "lyrics": "Ranjish hi sahi, dil hi dukhaane ke liye aa\nAa phir se mujhe chhod ke jaane ke liye aa\n\nPehle se marasim na sahi, phir bhi kabhi toh\nRasm-o-rahe duniya hi nibhaane ke liye aa\n\nKis kis ko bataayenge judaai ka sabab hum\nTu mujh se khafa hai toh zamaane ke liye aa",
+    "meaning": "Farazs greatest ghazal: Even if with resentment, even if only to break my heart again, return... if only to leave me once more."
   },
   {
-    id: 11,
-    title: "Kal Chaudhvi Ki Raat Thi",
-    titleUrdu: "کل چودھویں کی رات تھی",
-    artist: "Ghulam Ali",
-    poet: "Ibn-e-Insha",
-    raag: "Yaman",
-    mood: "Chandni • Mehfil",
-    category: "ghulam",
-    youtubeId: "Yf03Sd0LZKg",
-    duration: "5:50",
-    cover: "https://images.unsplash.com/photo-1532767153582-b1a0e5145009?auto=format&fit=crop&w=150&q=80",
-    lyrics: `Kal chaudhvi ki raat thi, shab bhar raha charcha tera
-Kuch ne kaha yeh chaand hai, kuch ne kaha chehra tera
-
-Hum bhi wahin maujood the, hum se bhi sab poochha kiye
-Hum hans diye, hum chup rahe, manzoor tha parda tera
-
-Uss sheher mein kis se milein, hum se toh chhooti mehfilein
-Har shakhs tera naam le, har shakhs deewana tera`,
-    meaning: "Last night during the full moon, the whole town debated its splendor against your countenance; I smiled quietly to keep your veil unlifted."
+    "id": 11,
+    "title": "Gulon Mein Rang Bhare",
+    "titleUrdu": "گلوں میں رنگ بھرے",
+    "artist": "Mehdi Hassan",
+    "poet": "Faiz Ahmad Faiz",
+    "raag": "Jhinjhoti",
+    "mood": "Bahaar • Intezaar",
+    "category": "mehdi",
+    "youtubeId": "Ds8nabK0vE8",
+    "duration": "5:30",
+    "cover": "https://images.unsplash.com/photo-1490750967868-88aa4486c946?auto=format&fit=crop&w=150&q=80",
+    "lyrics": "Gulon mein rang bhare baad-e-naubahaar chale\nChale bhi aao ki gulshan ka kaarobaar chale\n\nQafas udaas hai yaaro saba se kuch toh kaho\nKahin toh beher-e-khuda aaj zikr-e-yaar chale\n\nKhabar shab-e-wisaal ki uss but-e-jafakaar ko do\nKi shamma bujhne ko aayi, seher ka taara chale",
+    "meaning": "Let the fresh spring breeze paint the roses red—do return, so the true business of the garden may finally begin."
   },
   {
-    id: 12,
-    title: "Aaj Jaane Ki Zid Na Karo",
-    titleUrdu: "آج جانے کی ضد نہ کرو",
-    artist: "Farida Khanum",
-    poet: "Fayyaz Hashmi",
-    raag: "Bhairavi",
-    mood: "Pyaar • Iltija",
-    category: "farida",
-    youtubeId: "5Ff_0Oq2fJk",
-    duration: "6:35",
-    cover: "https://images.unsplash.com/photo-1465847899084-d164df4dedc6?auto=format&fit=crop&w=150&q=80",
-    lyrics: `Aaj jaane ki zid na karo
-Yoon hi pehloo mein baithe raho
-
-Haaye mar jaayenge, hum toh lutt jaayenge
-Aisi baatein kiya na karo
-
-Tum hi socho zara, kyoon na rokein tumhe
-Jaan jaati hai jab uth ke jaate ho tum`,
-    meaning: "Do not insist on departing tonight; remain seated beside me, for life itself leaves my body when you stand to leave."
+    "id": 12,
+    "title": "Mohabbat Karne Wale",
+    "titleUrdu": "محبت کرنے والے کم نہ ہوں گے",
+    "artist": "Mehdi Hassan",
+    "poet": "Hafeez Hoshiarpuri",
+    "raag": "Pilu",
+    "mood": "Wafa • Yaad",
+    "category": "mehdi",
+    "youtubeId": "iaQvfxnJwsw",
+    "duration": "5:45",
+    "cover": "https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?auto=format&fit=crop&w=150&q=80",
+    "lyrics": "Mohabbat karne wale kam na honge\nTeri mehfil mein lekin hum na honge\n\nZamaane bhar ke gham ya ik tera gham\nYeh gham hoga toh kitne gham na honge\n\nDilon ki uljhanein badhti rahengi\nAgar kuch mashware baaham na honge",
+    "meaning": "There will never be a shortage of those who praise and love you; but in your gathering, I will no longer be there."
   },
   {
-    id: 13,
-    title: "Ae Mohabbat Tere Anjaam Pe",
-    titleUrdu: "اے محبت ترے انجام پہ",
-    artist: "Begum Akhtar",
-    poet: "Shakeel Badayuni",
-    raag: "Pilu / Desh",
-    mood: "Suroor • Ghazal Queen",
-    category: "farida",
-    youtubeId: "5Fk5x5N7jK8",
-    duration: "5:15",
-    cover: "https://images.unsplash.com/photo-1447752875215-b2761acb3c5d?auto=format&fit=crop&w=150&q=80",
-    lyrics: `Ae mohabbat tere anjaam pe rona aaya
-Jaane kyoon aaj tere naam pe rona aaya
-
-Yoon toh har shaam ummeedon mein guzar jaati hai
-Aaj kuch dard bhari shaam pe rona aaya
-
-Kabhi taqdeer ka maatam, kabhi duniya ka gila
-Manzil-e-ishq mein har gaam pe rona aaya`,
-    meaning: "Begum Akhtar's sublime despair: O Love, today I weep over your inevitable demise; every step in your domain leads to quiet heartbreak."
+    "id": 13,
+    "title": "Duniya Kisi Ke Pyaar Mein",
+    "titleUrdu": "دنیا کسی کے پیار میں جنت سے کم نہیں",
+    "artist": "Mehdi Hassan",
+    "poet": "Qateel Shifai",
+    "raag": "Pahadi",
+    "mood": "Junoon • Tasawwur",
+    "category": "mehdi",
+    "youtubeId": "3zGr5dHD0cU",
+    "duration": "5:44",
+    "cover": "https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=150&q=80",
+    "lyrics": "Duniya kisi ke pyaar mein jannat se kam nahin\nIk jeevan saathi ki agar kami na ho\n\nJab tak na ho sharaab ka saaghar bhara hua\nMaikhane ki bahaar mein koi asar na ho\n\nHum tum juda sahi magar ik doosre ke hain\nYeh faasla dilon ke dharakne ka gham na ho",
+    "meaning": "The earthly world is nothing less than paradise when bathed in love. The gentle reassurance that true affection makes existence divine."
   },
   {
-    id: 14,
-    title: "Yeh Jo Halka Halka Suroor Hai",
-    titleUrdu: "یہ جو ہلکا ہلکا سرور ہے",
-    artist: "Nusrat Fateh Ali Khan",
-    poet: "Anwar Farrukhabadi",
-    raag: "Bhairavi / Sufi",
-    mood: "Sufiana • Khumaar",
-    category: "sufi",
-    youtubeId: "J2z_a0vLd-U",
-    duration: "9:15",
-    cover: "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&w=150&q=80",
-    lyrics: `Yeh jo halka halka suroor hai
-Yeh teri nazar ka qasoor hai
-Ki sharaab peena sikha diya
-
-Tere pyaar ne, teri chaah ne
-Teri behki behki nigaah ne
-Mujhe ek sharaabi bana diya`,
-    meaning: "This gentle ecstasy intoxicating my spirit is caused by your divine gaze, transforming worldly thirst into spiritual rapture."
+    "id": 14,
+    "title": "Rafta Rafta Woh Meri",
+    "titleUrdu": "رفتہ رفتہ وہ مری ہستی کا ساماں ہو گئے",
+    "artist": "Mehdi Hassan",
+    "poet": "Tasleem Fazli",
+    "raag": "Kafi",
+    "mood": "Qurbat • Mohabbat",
+    "category": "mehdi",
+    "youtubeId": "jtzioa3ddKE",
+    "duration": "6:20",
+    "cover": "https://images.unsplash.com/photo-1518495973542-4542c06a5843?auto=format&fit=crop&w=150&q=80",
+    "lyrics": "Rafta rafta woh meri hasti ka saamaan ho gaye\nPehle jaan, phir jaan-e-jaan, phir jaan-e-jaanaan ho gaye\n\nDin-ba-din badhti gayi uss husn ki raanaiyan\nPehle gul, phir gul-badan, phir gul-badaamaan ho gaye\n\nAap toh nazdeek se nazdeek-tar aate gaye\nPehle dil, phir dil-ruba, phir dil ke mehmaan ho gaye",
+    "meaning": "Step by step, slowly and tenderly, they became the very essence of my living soul—first my life, then the beloved of my soul, and finally life itself."
   },
   {
-    id: 15,
-    title: "Afreen Afreen",
-    titleUrdu: "آفریں آفریں",
-    artist: "Nusrat Fateh Ali Khan",
-    poet: "Javed Akhtar",
-    raag: "Khamaj",
-    mood: "Taareef • Husn",
-    category: "sufi",
-    youtubeId: "kw4tT7SCmaY",
-    duration: "6:45",
-    cover: "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=150&q=80",
-    lyrics: `Husn-e-jaanaan ki taareef mumkin nahin
-Aafreen aafreen, aafreen aafreen
-Tu bhi dekhe agar toh kahe hum-nasheen
-Aafreen aafreen, aafreen aafreen
-
-Chehra ik phool ki tarah shaadaab hai
-Chehra uss ka hai ya koi mehtaab hai`,
-    meaning: "No earthly words can capture the radiant grace of the beloved; even the most detached soul whispers 'Praise be!' upon witnessing it."
+    "id": 15,
+    "title": "Zindagi Mein Toh Sabhi",
+    "titleUrdu": "زندگی میں تو سبھی پیار کیا کرتے ہیں",
+    "artist": "Mehdi Hassan",
+    "poet": "Qateel Shifai",
+    "raag": "Bhairavi",
+    "mood": "Wafa-e-Khaas • Jazbaat",
+    "category": "mehdi",
+    "youtubeId": "V4hejGiRdSY",
+    "duration": "6:30",
+    "cover": "https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?auto=format&fit=crop&w=150&q=80",
+    "lyrics": "Zindagi mein toh sabhi pyaar kiya karte hain\nMain toh mar kar bhi meri jaan tujhe chaahoonga\n\nApne dil par tera naqsh-e-wafa baaqi hai\nMaut aayegi toh iss ko na mita paayegi\n\nTu meri aankh ke tevar na bhula paayegi\nAnkahi baat ko samjhega zamaana kaise",
+    "meaning": "Everyone loves while breathing life; but my devotion will endure far beyond mortality itself. A pledge of unending eternal fidelity."
+  },
+  {
+    "id": 16,
+    "title": "Chupke Chupke Raat Din",
+    "titleUrdu": "چپکے چپکے رات دن",
+    "artist": "Ghulam Ali",
+    "poet": "Hasrat Mohani",
+    "raag": "Kafi",
+    "mood": "Shab-e-Firaaq • Yaadein",
+    "category": "ghulam",
+    "youtubeId": "MWjaK_nW72E",
+    "duration": "7:12",
+    "cover": "https://images.unsplash.com/photo-1511192336575-5a79af67a629?auto=format&fit=crop&w=150&q=80",
+    "lyrics": "Chupke chupke raat din aansoo bahaana yaad hai\nHum ko ab tak aashiqui ka woh zamaana yaad hai\n\nBa-hazaaran iztiraab-o-sad-hazaaran ishtiyaaq\nTujhse woh pehle-pehal dil ka lagaana yaad hai\n\nDo-pahar ki dhoop mein mere bulaane ke liye\nWoh tera kothe pe nange paaon aana yaad hai",
+    "meaning": "Remembering those solitary nights shedding quiet tears, and recalling every tender heartbeat of our first forbidden love."
+  },
+  {
+    "id": 17,
+    "title": "Hangama Hai Kyon Barpa",
+    "titleUrdu": "ہنگامہ ہے کیوں برپا",
+    "artist": "Ghulam Ali",
+    "poet": "Akbar Allahabadi",
+    "raag": "Darbari",
+    "mood": "Maikhana • Mastana",
+    "category": "ghulam",
+    "youtubeId": "xQsMn1kmJs4",
+    "duration": "6:40",
+    "cover": "https://images.unsplash.com/photo-1470225620780-dba8ba36b745?auto=format&fit=crop&w=150&q=80",
+    "lyrics": "Hangama hai kyoon barpa, thodi si jo pee li hai\nDaaka toh nahin daala, chori toh nahin ki hai\n\nUss mai se nahin matlab, dil jis se ho begaana\nMaqsood hai uss mai se, dil hi mein jo kheenchti hai\n\nSooraj mein lage dhabba, fitrat ke karishme hain\nBut hum ko kahein kaafir, Allah ki marzi hai",
+    "meaning": "Why create such an uproar merely because I indulged in a drop of wine? I havent plundered or robbed anyone!"
+  },
+  {
+    "id": 18,
+    "title": "Kal Chaudhvi Ki Raat Thi",
+    "titleUrdu": "کل چودھویں کی رات تھی",
+    "artist": "Ghulam Ali",
+    "poet": "Ibn-e-Insha",
+    "raag": "Yaman",
+    "mood": "Chandni • Mehfil",
+    "category": "ghulam",
+    "youtubeId": "DcFblrrn6TI",
+    "duration": "5:50",
+    "cover": "https://images.unsplash.com/photo-1532767153582-b1a0e5145009?auto=format&fit=crop&w=150&q=80",
+    "lyrics": "Kal chaudhvi ki raat thi, shab bhar raha charcha tera\nKuch ne kaha yeh chaand hai, kuch ne kaha chehra tera\n\nHum bhi wahin maujood the, hum se bhi sab poochha kiye\nHum hans diye, hum chup rahe, manzoor tha parda tera\n\nUss sheher mein kis se milein, hum se toh chhooti mehfilein\nHar shakhs tera naam le, har shakhs deewana tera",
+    "meaning": "Last night during the full moon, the whole town debated its splendor against your countenance; I smiled quietly to keep your veil unlifted."
+  },
+  {
+    "id": 19,
+    "title": "Yeh Dil Yeh Paagal Dil Mera (Awaargi)",
+    "titleUrdu": "یہ دل یہ پاگل دل مرا",
+    "artist": "Ghulam Ali",
+    "poet": "Mohsin Naqvi",
+    "raag": "Bilawal",
+    "mood": "Awargi • Tanhai",
+    "category": "ghulam",
+    "youtubeId": "pZWqn3BC17Q",
+    "duration": "6:59",
+    "cover": "https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=150&q=80",
+    "lyrics": "Yeh dil yeh paagal dil mera kyon bujh gaya aawaargi\nIss dasht mein ik shahr tha woh kya hua aawaargi\n\nKal shab mujhe be-shakl si aawaaz ne chaunka diya\nMain ne kaha tu kaun hai uss ne kaha aawaargi\n\nYeh dard ki tanhaaiyan yeh gham ke pehre chhaar-su\nHum ne toh har ik mod par dekha tujhe aawaargi",
+    "meaning": "Mohsin Naqvis haunting ode to wanderlust, desolation, and loneliness: asking where that vibrant city once living inside this wandering heart has disappeared."
+  },
+  {
+    "id": 20,
+    "title": "Humko Kiske Gham Ne Maara",
+    "titleUrdu": "ہم کو کس کے غم نے مارا",
+    "artist": "Ghulam Ali",
+    "poet": "Masroor Anwar",
+    "raag": "Bhairavi",
+    "mood": "Bebasi • Khamosh Gham",
+    "category": "ghulam",
+    "youtubeId": "LnVW-lYaRIs",
+    "duration": "7:17",
+    "cover": "https://images.unsplash.com/photo-1509114397022-ed747cca3f65?auto=format&fit=crop&w=150&q=80",
+    "lyrics": "Humko kiske gham ne maara, yeh kahaani phir sahi\nKisne toda dil hamaara, yeh kahaani phir sahi\n\nZindagi ne hum pe kitne zulm dhaaye hain magar\nHum ne has kar sab saha hai, yeh kahaani phir sahi\n\nAaj toh mehfil mein aaye hain sukoon-e-dil liye\nAshq palkon par na laao, yeh kahaani phir sahi",
+    "meaning": "Whose sorrow broke me? That tale is for another day. Let us savor this peaceful twilight gathering without unearthing old griefs."
+  },
+  {
+    "id": 21,
+    "title": "Faasle Aise Bhi Honge",
+    "titleUrdu": "فاصلے ایسے بھی ہوں گے",
+    "artist": "Ghulam Ali",
+    "poet": "Adeem Hashmi",
+    "raag": "Desh",
+    "mood": "Taqdeer • Judaai",
+    "category": "ghulam",
+    "youtubeId": "HYaV4pa5oMQ",
+    "duration": "6:15",
+    "cover": "https://images.unsplash.com/photo-1473448912268-2022ce9509d8?auto=format&fit=crop&w=150&q=80",
+    "lyrics": "Faasle aise bhi honge yeh kabhi socha na tha\nSaamne baitha tha mere aur woh mera na tha\n\nWoh ke khushboo ki tarah phaila tha mere chaar-su\nMain usse mehsoos kar sakta tha chhoo sakta na tha\n\nKhatm hi samjho bahaar-e-ishq ka daur-e-wafa\nUss ne jab se muskura kar alvida hum se kaha",
+    "meaning": "I never imagined such distances could exist—sitting directly before me, yet belonging to another world."
+  },
+  {
+    "id": 22,
+    "title": "Aaj Jaane Ki Zid Na Karo",
+    "titleUrdu": "آج جانے کی ضد نہ کرو",
+    "artist": "Farida Khanum",
+    "poet": "Fayyaz Hashmi",
+    "raag": "Bhairavi",
+    "mood": "Pyaar • Iltija",
+    "category": "farida",
+    "youtubeId": "CfUDuYAasjE",
+    "duration": "6:35",
+    "cover": "https://images.unsplash.com/photo-1465847899084-d164df4dedc6?auto=format&fit=crop&w=150&q=80",
+    "lyrics": "Aaj jaane ki zid na karo\nYoon hi pehloo mein baithe raho\n\nHaaye mar jaayenge, hum toh lutt jaayenge\nAisi baatein kiya na karo\n\nTum hi socho zara, kyoon na rokein tumhe\nJaan jaati hai jab uth ke jaate ho tum",
+    "meaning": "Do not insist on departing tonight; remain seated beside me, for life itself leaves my body when you stand to leave."
+  },
+  {
+    "id": 23,
+    "title": "Ae Mohabbat Tere Anjaam Pe",
+    "titleUrdu": "اے محبت ترے انجام پہ",
+    "artist": "Begum Akhtar",
+    "poet": "Shakeel Badayuni",
+    "raag": "Pilu / Desh",
+    "mood": "Suroor • Ghazal Queen",
+    "category": "farida",
+    "youtubeId": "PrTXeyhRpOA",
+    "duration": "3:31",
+    "cover": "https://images.unsplash.com/photo-1447752875215-b2761acb3c5d?auto=format&fit=crop&w=150&q=80",
+    "lyrics": "Ae mohabbat tere anjaam pe rona aaya\nJaane kyoon aaj tere naam pe rona aaya\n\nYoon toh har shaam ummeedon mein guzar jaati hai\nAaj kuch dard bhari shaam pe rona aaya\n\nKabhi taqdeer ka maatam, kabhi duniya ka gila\nManzil-e-ishq mein har gaam pe rona aaya",
+    "meaning": "Begum Akhtars sublime despair: O Love, today I weep over your inevitable demise; every step in your domain leads to quiet heartbreak."
+  },
+  {
+    "id": 24,
+    "title": "Mere Humnafas Mere Humnawa",
+    "titleUrdu": "مرے ہم نفس مرے ہم نوا",
+    "artist": "Begum Akhtar",
+    "poet": "Shakeel Badayuni",
+    "raag": "Tilang",
+    "mood": "Daastan • Dard",
+    "category": "farida",
+    "youtubeId": "XYgG6SiX7ZE",
+    "duration": "6:47",
+    "cover": "https://images.unsplash.com/photo-1513829596324-4bb2800c5efb?auto=format&fit=crop&w=150&q=80",
+    "lyrics": "Mere humnafas mere humnawa mujhe dost ban ke dafash na de\nMain gham-e-jahaan se nikal ke bhi tere gham se bach na sakunga\n\nTera dard hai meri zindagi tera gham hai meri shaan-e-dil\nKisi be-wafa ki nigaah mein yeh maqam aa na sakega\n\nWoh nigaah jis se bahaar thi wahi teer ban ke chubhi agar\nToh bahaar bhi meri qabr par kabhi phool la na sakegi",
+    "meaning": "O my companion, do not wound me under the guise of friendship; for even if I escape the griefs of this world, I cannot survive your distance."
+  },
+  {
+    "id": 25,
+    "title": "Deewana Banana Hai To",
+    "titleUrdu": "دیوانہ بنانا ہے تو دیوانہ بنا دے",
+    "artist": "Begum Akhtar",
+    "poet": "Behzad Lakhnavi",
+    "raag": "Pahadi",
+    "mood": "Ishq-e-Haqeeqi • Khumaar",
+    "category": "farida",
+    "youtubeId": "sG6dK3a1dyk",
+    "duration": "3:42",
+    "cover": "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=150&q=80",
+    "lyrics": "Deewana banana hai toh deewana bana de\nWarna kahin taqdeer tamasha na bana de\n\nAe dekhne waale mujhe hasrat se na dekho\nTum ko bhi meri aah kahin aisi na bana de\n\nTere rukh-e-roshan ki chamak dekh ke saaqi\nMaikhaane ko suraj ki kiran chhoo na saki ho",
+    "meaning": "If you desire to make me madly intoxicated with love, do so completely; or else do not turn my fate into a spectacle for all to see."
+  },
+  {
+    "id": 26,
+    "title": "Dil-e-Nadaan Tujhe Hua Kya Hai",
+    "titleUrdu": "دل ناداں تجھے ہوا کیا ہے",
+    "artist": "Begum Akhtar & Mehdi Hassan",
+    "poet": "Mirza Ghalib",
+    "raag": "Desh",
+    "mood": "Falsafa-e-Ishq • Sawal",
+    "category": "farida",
+    "youtubeId": "EJNa3epDtyk",
+    "duration": "5:30",
+    "cover": "https://images.unsplash.com/photo-1455390582262-044cdead277a?auto=format&fit=crop&w=150&q=80",
+    "lyrics": "Dil-e-naadaan tujhe hua kya hai\nAakhir iss dard ki dawa kya hai\n\nHum hain mushtaaq aur woh bezaar\nYa Ilaahi yeh maajra kya hai\n\nMain bhi munh mein zabaan rakhta hoon\nKaash poochho ki muddaa kya hai\n\nHum ko un se wafa ki hai ummeed\nJo nahin jaante wafa kya hai",
+    "meaning": "Ghalibs timeless philosophical inquiry: O foolish heart, what has afflicted you? What is the true remedy for this yearning?"
+  },
+  {
+    "id": 27,
+    "title": "Yeh Jo Halka Halka Suroor Hai",
+    "titleUrdu": "یہ جو ہلکا ہلکا سرور ہے",
+    "artist": "Nusrat Fateh Ali Khan",
+    "poet": "Anwar Farrukhabadi",
+    "raag": "Bhairavi / Sufi",
+    "mood": "Sufiana • Khumaar",
+    "category": "sufi",
+    "youtubeId": "UIPXHsUXVH0",
+    "duration": "9:15",
+    "cover": "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&w=150&q=80",
+    "lyrics": "Yeh jo halka halka suroor hai\nYeh teri nazar ka qasoor hai\nKi sharaab peena sikha diya\n\nTere pyaar ne, teri chaah ne\nTeri behki behki nigaah ne\nMujhe ek sharaabi bana diya",
+    "meaning": "This gentle ecstasy intoxicating my spirit is caused by your divine gaze, transforming worldly thirst into spiritual rapture."
+  },
+  {
+    "id": 28,
+    "title": "Afreen Afreen",
+    "titleUrdu": "آفریں آفریں",
+    "artist": "Nusrat Fateh Ali Khan",
+    "poet": "Javed Akhtar",
+    "raag": "Khamaj",
+    "mood": "Taareef • Husn",
+    "category": "sufi",
+    "youtubeId": "2F7G9bOIwlk",
+    "duration": "6:01",
+    "cover": "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=150&q=80",
+    "lyrics": "Husn-e-jaanaan ki taareef mumkin nahin\nAafreen aafreen, aafreen aafreen\nTu bhi dekhe agar toh kahe hum-nasheen\nAafreen aafreen, aafreen aafreen\n\nChehra ik phool ki tarah shaadaab hai\nChehra uss ka hai ya koi mehtaab hai",
+    "meaning": "No earthly words can capture the radiant grace of the beloved; even the most detached soul whispers Praise be! upon witnessing it."
+  },
+  {
+    "id": 29,
+    "title": "Chaap Tilak Sab Chheeni",
+    "titleUrdu": "چھاپ تلک سب چھینی رے موسے نیناں ملائیکے",
+    "artist": "Abida Parveen & Rahat Fateh Ali Khan",
+    "poet": "Hazrat Amir Khusro",
+    "raag": "Yaman / Sufi",
+    "mood": "Roohani • Sufiana",
+    "category": "sufi",
+    "youtubeId": "7SDrjwtfKMk",
+    "duration": "9:02",
+    "cover": "https://images.unsplash.com/photo-1490750967868-88aa4486c946?auto=format&fit=crop&w=150&q=80",
+    "lyrics": "Chaap tilak sab chheeni re mose naina milaike\nPrem bhatee ka madhva pilaike\nMatwaali kar deeni re mose naina milaike\n\nGori gori baiyaan, hari hari churiyaan\nBaiyaan pakar dhar leeni re mose naina milaike\n\nKhusro Nizaam ke bal bal jaiye\nMohe suhaagan keeni re mose naina milaike",
+    "meaning": "Amir Khusros supreme mystical ecstasy: You took away all my pretense, my rituals, and my identity with just a single locking of eyes."
+  },
+  {
+    "id": 30,
+    "title": "Chandi Jaisa Rang Hai Tera",
+    "titleUrdu": "چاندی جیسا رنگ ہے تیرا",
+    "artist": "Pankaj Udhas",
+    "poet": "Mumtaz Rashid",
+    "raag": "Pahadi",
+    "mood": "Husn-o-Shabaab • Romani",
+    "category": "pankaj",
+    "youtubeId": "G4NAKKy5k0g",
+    "duration": "4:37",
+    "cover": "https://images.unsplash.com/photo-1518495973542-4542c06a5843?auto=format&fit=crop&w=150&q=80",
+    "lyrics": "Chaandi jaisa rang hai tera, sone jaise baal\nEk tu hi dhanwaan hai gori, baaqi sab kangaal\n\nJis raste se guzre tu, woh phoolon se bhar jaaye\nDekhe jo bhi tujhko bas tera hi ho jaaye\n\nDhan daulat ki chhaon mein beetein tere din aur raat\nHum to tere aashiq hain bas chaahein tera saath",
+    "meaning": "Pankaj Udhas iconic celebration of incomparable grace and radiant beauty, comparing the beloveds aura to shining silver and golden sunbeams."
+  },
+  {
+    "id": 31,
+    "title": "Chitthi Aayi Hai",
+    "titleUrdu": "چٹھی آئی ہے وطن سے",
+    "artist": "Pankaj Udhas",
+    "poet": "Anand Bakshi",
+    "raag": "Shivaranjani",
+    "mood": "Watan • Yaadein",
+    "category": "pankaj",
+    "youtubeId": "fJN7nJ1bsI4",
+    "duration": "6:55",
+    "cover": "https://images.unsplash.com/photo-1516280440614-37939bbacd81?auto=format&fit=crop&w=150&q=80",
+    "lyrics": "Chitthi aayi hai aayi hai chitthi aayi hai\nChitthi hai yaadon ka chaman, laayi hai dil ki baat\n\nWatan se aayi hai chitthi, watan ki yaad dilaati hai\nBichhde huye apnon ki qurbat phir se jagaati hai\n\nPardes mein rehte rehte beet gaye kitne saal\nAankhon mein aansoo bhar aaye sun kar ghar ka haal",
+    "meaning": "The emotional anthem of every soul residing far from their homeland, yearning for the warmth of soil, childhood gullies, and family embrace."
+  },
+  {
+    "id": 32,
+    "title": "Aur Aahista Kijiye Baatein",
+    "titleUrdu": "اور آہستہ کیجیے باتیں",
+    "artist": "Pankaj Udhas",
+    "poet": "Zafar Gorakhpuri",
+    "raag": "Khamaj",
+    "mood": "Nazaaqat • Raaz",
+    "category": "pankaj",
+    "youtubeId": "HbQud4yWoog",
+    "duration": "5:17",
+    "cover": "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=150&q=80",
+    "lyrics": "Aur aahista kijiye baatein, dhadkanein koi sun raha hoga\nLafz gunguna rahe hain jaise, khwaab palkon pe bun raha hoga\n\nChupke chupke yeh raaz khul na jaaye\nShaam ka rang aur dhul na jaaye\n\nItni meethi nawaazishein saaqi\nJaam hothon se chhoo ke peena hai",
+    "meaning": "Speak even softer, lest someone eavesdrop on the secrets whispered between our heartbeats in this serene twilight hour."
   }
 ];
