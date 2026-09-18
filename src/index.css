@@ -1,0 +1,352 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --app-bg: #0e0908;
+}
+
+* {
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+
+html {
+  background-color: var(--app-bg);
+  color: #f5f0eb;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  min-height: 100vh;
+  min-height: 100svh;
+  background-color: var(--app-bg);
+  overflow-x: hidden;
+  position: relative;
+}
+
+/* Organic Candlelight Breathing Keyframe */
+@keyframes candleBreathe {
+  0%, 100% {
+    opacity: 0.85;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1.15;
+    transform: scale(1.03);
+  }
+}
+
+.animate-candle-breathe {
+  animation: candleBreathe 6s ease-in-out infinite;
+}
+
+/* Urdu Typography */
+.font-urdu {
+  font-family: 'Noto Nastaliq Urdu', 'Amiri', serif;
+  line-height: 1.9;
+  direction: rtl;
+}
+.font-display {
+  font-family: 'Cinzel', serif;
+  letter-spacing: 0.12em;
+}
+.font-poetic {
+  font-family: 'Cormorant Garamond', serif;
+}
+
+/* Glassmorphism Control Pills (Deluxe Saloon Inspired) */
+.glass-pill {
+  height: 38px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  background: rgba(22, 13, 11, 0.65);
+  border: 1px solid rgba(255, 230, 200, 0.18);
+  border-radius: 9999px;
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.45), inset 0 1px 1px rgba(255, 255, 255, 0.1);
+  color: rgba(255, 245, 235, 0.92);
+  font-size: 12px;
+  font-weight: 600;
+  padding: 0 14px;
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+  user-select: none;
+  white-space: nowrap;
+}
+.glass-pill:hover {
+  background: rgba(245, 158, 11, 0.2);
+  border-color: rgba(245, 158, 11, 0.45);
+  color: #fed7aa;
+  transform: translateY(-1px);
+}
+.glass-pill:active {
+  transform: scale(0.97);
+}
+.glass-pill.active {
+  background: rgba(245, 158, 11, 0.35);
+  border-color: rgba(245, 158, 11, 0.75);
+  color: #fef3c7;
+  box-shadow: 0 0 16px rgba(245, 158, 11, 0.35), inset 0 1px 2px rgba(255, 255, 255, 0.2);
+}
+
+/* Floating Music Player Dock */
+.music-player {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  width: 100%;
+  max-width: 640px;
+  background: rgba(20, 11, 9, 0.75);
+  border: 1px solid rgba(255, 220, 180, 0.2);
+  border-radius: 28px;
+  padding: 12px 18px;
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.9), 0 0 35px rgba(245, 158, 11, 0.12), inset 0 1px 1px rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(28px);
+  -webkit-backdrop-filter: blur(28px);
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+.music-player:hover {
+  border-color: rgba(245, 158, 11, 0.35);
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.95), 0 0 45px rgba(245, 158, 11, 0.18);
+}
+
+/* Vintage Vinyl Record */
+.vinyl-frame {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  position: relative;
+  flex-shrink: 0;
+  cursor: pointer;
+  border: 2px solid rgba(245, 158, 11, 0.4);
+  background: radial-gradient(circle, #2a150c 0%, #0d0604 70%, #050201 100%);
+  box-shadow: 0 0 15px rgba(0,0,0,0.8), inset 0 0 8px rgba(0,0,0,0.9);
+  transition: transform 0.25s ease, border-color 0.25s;
+}
+.vinyl-frame:hover {
+  transform: scale(1.08);
+  border-color: #f59e0b;
+  box-shadow: 0 0 20px rgba(245, 158, 11, 0.4);
+}
+.vinyl-grooves {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  position: relative;
+  background: repeating-radial-gradient(
+    circle at 50% 50%,
+    transparent 0,
+    transparent 2px,
+    rgba(255, 255, 255, 0.04) 3px,
+    transparent 4px
+  );
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.vinyl-center-art {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  border: 1px solid rgba(245, 158, 11, 0.8);
+  position: relative;
+  box-shadow: 0 0 8px rgba(0,0,0,0.6);
+}
+.vinyl-hole {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 6px;
+  height: 6px;
+  margin: -3px 0 0 -3px;
+  background: #0a0605;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  pointer-events: none;
+}
+.vinyl-spin {
+  animation: vinylRotate 3.6s linear infinite;
+}
+@keyframes vinylRotate {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/* Player Action Buttons */
+.icon-btn {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  color: rgba(255, 245, 235, 0.9);
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  backdrop-filter: blur(8px);
+}
+.icon-btn:hover {
+  color: #ffffff;
+  background: rgba(245, 158, 11, 0.25);
+  border-color: rgba(245, 158, 11, 0.5);
+  transform: scale(1.08);
+}
+.icon-btn:active {
+  transform: scale(0.95);
+}
+.icon-btn.active {
+  color: #fbbf24;
+  background: rgba(245, 158, 11, 0.3);
+  border-color: #f59e0b;
+}
+.play-btn {
+  background: linear-gradient(135deg, #fbbf24 0%, #d97706 100%);
+  color: #120704;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  box-shadow: 0 0 24px rgba(245, 158, 11, 0.5), inset 0 1px 2px rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.play-btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 32px rgba(245, 158, 11, 0.7);
+}
+.play-btn:active {
+  transform: scale(0.95);
+}
+
+/* Progress Bar */
+.progress-track {
+  flex: 1;
+  height: 6px;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 999px;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+}
+.progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #d97706, #fbbf24);
+  width: 0%;
+  border-radius: 999px;
+  transition: width 0.15s linear;
+  box-shadow: 0 0 10px rgba(245, 158, 11, 0.6);
+}
+
+/* Lantern Sway Animation */
+@keyframes lanternSway {
+  0%, 100% { transform: rotate(-2deg); }
+  50% { transform: rotate(2deg); }
+}
+.lantern-sway-left {
+  transform-origin: top center;
+  animation: lanternSway 8s ease-in-out infinite;
+}
+.lantern-sway-right {
+  transform-origin: top center;
+  animation: lanternSway 9.5s ease-in-out infinite reverse;
+}
+
+/* Star Twinkle */
+@keyframes starPulse {
+  0%, 100% { opacity: 0.2; transform: scale(0.8); }
+  50% { opacity: 0.9; transform: scale(1.2); }
+}
+.star-twinkle-1 { animation: starPulse 4s ease-in-out infinite; }
+.star-twinkle-2 { animation: starPulse 6s ease-in-out infinite 1.5s; }
+.star-twinkle-3 { animation: starPulse 5s ease-in-out infinite 3s; }
+
+/* Modals */
+.app-modal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  inset: 0;
+  z-index: 80;
+  padding: 16px;
+  background: rgba(8, 4, 3, 0.82);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  animation: modalFadeIn 0.25s ease-out forwards;
+}
+@keyframes modalFadeIn {
+  from { opacity: 0; transform: scale(0.97); }
+  to { opacity: 1; transform: scale(1); }
+}
+.modal-card {
+  position: relative;
+  width: 100%;
+  max-width: 580px;
+  background: radial-gradient(circle at top, #24120e 0%, #110705 100%);
+  border: 1px solid rgba(245, 158, 11, 0.35);
+  border-radius: 28px;
+  box-shadow: 0 30px 70px rgba(0, 0, 0, 0.9), inset 0 1px 1px rgba(255, 240, 220, 0.15);
+  padding: 24px;
+  max-height: 88vh;
+  overflow-y: auto;
+}
+@media (min-width: 640px) {
+  .modal-card {
+    padding: 32px;
+  }
+}
+
+/* Equalizer Bars */
+.eq-bar {
+  width: 3px;
+  background: #fbbf24;
+  border-radius: 2px;
+  transition: height 0.15s ease;
+  height: 4px;
+}
+.playing .eq-bar:nth-child(1) { animation: eqBounce 0.8s ease-in-out infinite 0.1s; }
+.playing .eq-bar:nth-child(2) { animation: eqBounce 0.9s ease-in-out infinite 0.3s; }
+.playing .eq-bar:nth-child(3) { animation: eqBounce 0.7s ease-in-out infinite 0.2s; }
+.playing .eq-bar:nth-child(4) { animation: eqBounce 1.0s ease-in-out infinite 0.4s; }
+@keyframes eqBounce {
+  0%, 100% { height: 4px; }
+  50% { height: 18px; }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(18, 9, 7, 0.5);
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(245, 158, 11, 0.3);
+  border-radius: 999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(245, 158, 11, 0.6);
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}

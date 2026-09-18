@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <rect width="100" height="100" rx="24" fill="#0e0908" />
+  <circle cx="50" cy="50" r="38" fill="none" stroke="#f59e0b" stroke-width="2" stroke-opacity="0.4" />
+  <!-- Diya Body -->
+  <path d="M 28,62 C 28,74 72,74 72,62 C 78,54 50,44 50,44 C 50,44 22,54 28,62 Z" fill="#b45309" stroke="#d97706" stroke-width="2" />
+  <!-- Flame -->
+  <ellipse cx="50" cy="40" rx="6" ry="14" fill="#fbbf24" />
+  <ellipse cx="50" cy="42" rx="3" ry="8" fill="#fff" />
+</svg>
